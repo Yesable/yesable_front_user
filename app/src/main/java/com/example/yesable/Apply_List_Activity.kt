@@ -32,8 +32,7 @@ class Apply_List_Activity : ComponentActivity() {
         }
 
 
-        val logoImageView6 = findViewById<ImageView>(R.id.apply_button)
-        logoImageView6.setImageResource(R.drawable.apply_button)
+
 
         val apply_button = findViewById<ImageView>(R.id.apply_button)
         apply_button.setOnClickListener {

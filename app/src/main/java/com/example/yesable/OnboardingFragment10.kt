@@ -49,7 +49,7 @@ class OnboardingFragment10 : Fragment() {
 
                 // 마지막 페이지인 경우 추가 동작을 여기에 작성
                 // 예: 메인 액티비티로 이동
-                val intent = Intent(activity, MainActivity::class.java)
+                val intent = Intent(activity, Main_Activity::class.java)
                 startActivity(intent)
                 activity?.finish()
 

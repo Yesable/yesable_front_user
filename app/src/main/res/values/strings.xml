@@ -21,6 +21,15 @@
     <string name="prompt_year">취득년도</string>
     <string name="title_activity_recruitment_detail1">Recruitment_Detail_Activity1</string>
     <string name="title_activity_apply_list">Apply_List_Activity</string>
+    <string name="title_activity_main">Main_Activity</string>
+
+    <string name="title_dashboard">Dashboard</string>
+
+    <string name="title_chat">채팅</string>
+    <string name="title_home">홈</string>
+    <string name="title_recruit">채용공고</string>
+    <string name="title_notification">알림</string>
+    <string name="title_mypage">마이페이지</string>
 
 
 </resources>

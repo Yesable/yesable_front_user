@@ -36,7 +36,7 @@ class ApplySuccessActivity : AppCompatActivity() {
 
         val list_return = findViewById<Button>(R.id.button_list_return)
         list_return.setOnClickListener {
-            val intent = Intent(this, G_Main_Activity::class.java)
+            val intent = Intent(this, Main_Activity::class.java)
             startActivity(intent)
         }
 

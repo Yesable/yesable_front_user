@@ -30,23 +30,7 @@ class Recruitment_Detail_Activity : ComponentActivity() {
         val logoImageView1 = findViewById<ImageView>(R.id.imageView1)
         logoImageView1.setImageResource(R.drawable.logo)
 
-        val logoImageView2 = findViewById<ImageView>(R.id.imageView2)
-        logoImageView2.setImageResource(R.drawable.apply1)
 
-        val logoImageView3 = findViewById<ImageView>(R.id.imageView3)
-        logoImageView3.setImageResource(R.drawable.apply2)
-
-        val logoImageView4 = findViewById<ImageView>(R.id.imageView4)
-        logoImageView4.setImageResource(R.drawable.apply3)
-
-        val logoImageView5 = findViewById<ImageView>(R.id.imageView5)
-        logoImageView5.setImageResource(R.drawable.apply4)
-
-        val logoImageView6 = findViewById<ImageView>(R.id.imageView6)
-        logoImageView6.setImageResource(R.drawable.apply5)
-
-        val logoImageView7 = findViewById<ImageView>(R.id.imageView7)
-        logoImageView7.setImageResource(R.drawable.apply6)
 
         val sign_button = findViewById<Button>(R.id.sign_button)
         sign_button.setOnClickListener {

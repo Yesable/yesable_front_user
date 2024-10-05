@@ -3,7 +3,6 @@ package com.example.yesable
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 
@@ -16,7 +15,7 @@ class StartActivity : ComponentActivity() {
         // 회원가입 버튼 화면 전환 -> 회원가입 유형 선택 화면 이동
         val sign_button = findViewById<TextView>(R.id.sign_button)
         sign_button.setOnClickListener {
-            val intent = Intent(this, SignSelectActivity::class.java)
+            val intent = Intent(this, IndividualMemberRegistrationActivity::class.java)
             startActivity(intent)
         }
 
@@ -24,7 +23,7 @@ class StartActivity : ComponentActivity() {
         val main_button = findViewById<TextView>(R.id.main_button)
         main_button.setOnClickListener {
 
-            val intent = Intent(this, G_Main_Activity::class.java)
+            val intent = Intent(this, Main_Activity::class.java)
 
             startActivity(intent)
         }

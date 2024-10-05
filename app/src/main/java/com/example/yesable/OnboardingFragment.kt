@@ -49,7 +49,7 @@ class OnboardingFragment : Fragment() {
                     (activity as? OnboardingActivity)?.viewPager2?.currentItem = pageNumber + 1
                 }
                 9 -> {
-                    val intent = Intent(activity, G_Main_Activity::class.java)
+                    val intent = Intent(activity, Main_Activity::class.java)
                     startActivity(intent)
 
                     activity?.finish()
