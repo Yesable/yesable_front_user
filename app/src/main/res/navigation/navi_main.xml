@@ -8,13 +8,13 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.yesable.HomeFragment"
-        android:label="fragment_home"
+        android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/recruitFragment"
         android:name="com.example.yesable.RecruitFragment"
-        android:label="fragment_recruit"
+        android:label="@string/title_recruit"
         tools:layout="@layout/fragment_recruit" />
 
     <fragment
@@ -34,5 +34,4 @@
         android:name="com.example.yesable.MyPageFragment"
         android:label="@string/title_mypage"
         tools:layout="@layout/fragment_my_page" />
-
 </navigation>

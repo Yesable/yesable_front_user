@@ -28,27 +28,26 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="46dp"
-                android:contentDescription="뒤로 가기"
-                android:text="〈      채팅"
-                android:textSize="21sp"
+                android:text="  채팅"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
 
-            <ImageView
-                android:id="@+id/search"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="46dp"
-                android:layout_marginEnd="28dp"
-                android:contentDescription="검색"
-                android:src="@drawable/baseline_search_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.466" />
+<!--            <ImageView-->
+<!--                android:id="@+id/search"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginTop="46dp"-->
+<!--                android:layout_marginEnd="28dp"-->
+<!--                android:contentDescription="검색"-->
+<!--                android:src="@drawable/baseline_search_24"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.466" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
