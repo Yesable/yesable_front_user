@@ -8,6 +8,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class SearchResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +27,11 @@ class SearchResultActivity : AppCompatActivity() {
             val intent = Intent(this, SearchActivity::class.java)
             startActivity(intent)
         }
+
+        val recyclerView: RecyclerView = findViewById(R.id.recyclerView_search_result)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = SearchResultAdapter(SearchResultList.searchList)
+
 
     }
 }
