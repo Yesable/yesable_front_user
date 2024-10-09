@@ -34,4 +34,5 @@
         android:name="com.example.yesable.MyPageFragment"
         android:label="@string/title_mypage"
         tools:layout="@layout/fragment_my_page" />
+
 </navigation>
