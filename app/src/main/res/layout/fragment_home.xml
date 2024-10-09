@@ -71,21 +71,23 @@
                 android:layout_marginTop="16dp"
                 android:text="김유저님만을 위한 추천 공고"
                 android:textSize="17sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView4"
-                android:layout_width="350dp"
-                android:layout_height="102dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="8dp" />
+                android:id="@+id/recyclerView_main_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/recyclerview_main_recommend" />
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="330dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="16dp"
+                android:id="@+id/button_rec_more"
+                style="@style/ButtonStyleLightGrayLine"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
                 android:text="더 많은 채용 공고 보러 가기" />
 
             <TextView
