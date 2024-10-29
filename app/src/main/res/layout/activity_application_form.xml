@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="30dp"
-                android:text="이력서 제목 *"
+                android:text="지원서 제목 *"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +67,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/edit_text_background"
-                android:hint="장애를 극복하여 긍정적인 변화를 이끈 사람"
+                android:hint="지원서 제목"
                 android:inputType="text"
                 android:minHeight="48dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -105,20 +105,91 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_ai_info" />
 
-            <TextView
-                android:id="@+id/tv_member_info_details"
-                android:layout_width="0dp"
+            <TableLayout
+                android:id="@+id/table_layout1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-
                 android:background="@drawable/edit_text_background"
-                android:text="성별·나이\t\t\t 남자 23세 (2000년생)\n연락처 \t\t\t\t\t 010-1234-5678\n이메일 \t\t\t\t\t yesable@gmail.com\n장애 유형\t\t\t 시각장애"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_member_info_label" />
+                android:padding="16dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="123dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:text="이름"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="홍길동"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:text="생년월일"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20000101"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:text="핸드폰"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="010-0000-0000"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:text="이메일"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="hong0101@naver.com"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+            </TableLayout>
 
             <!-- 경력 선택 섹션 -->
             <TextView
@@ -188,20 +259,91 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/et_career_details" />
 
-            <TextView
-                android:id="@+id/tv_education_details"
-                android:layout_width="0dp"
+            <TableLayout
+                android:id="@+id/table_layout2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-
                 android:background="@drawable/edit_text_background"
-                android:text="대학원\t\t\t\t\t 박사 서울대학교 컴퓨터공학과\n대학원\t\t\t\t\t 석사 서울대학교 컴퓨터공학과\n대학교 \t\t\t\t\t 예서블대학교 컴퓨터공학과\n고등학교\t\t\t\t 하나고등학교"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_education_label" />
+                android:padding="16dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="123dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:text="이름"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="홍길동"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:text="생년월일"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20000101"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:text="핸드폰"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="010-0000-0000"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:text="이메일"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="hong0101@naver.com"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+            </TableLayout>
 
             <!-- 자격증 섹션 -->
             <TextView
@@ -224,7 +366,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/edit_text_background"
-                android:text="컴퓨터 활용 능력 1급\n한국사 능력 검정시험 3급"
+                android:text="해당 자격 내용"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -260,7 +402,19 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <!-- 완료 및 취소 버튼 -->
+
+    <Button
+        android:id="@+id/new_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="새로운 버튼"
+        app:layout_constraintBottom_toTopOf="@+id/ll_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <LinearLayout
         android:id="@+id/ll_buttons"
         android:layout_width="0dp"
